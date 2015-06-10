@@ -1,0 +1,18 @@
+{{outlet}}
+<br>
+<h2>Showing all campaigns</h2>
+
+
+{{#each campaign in model}}
+    <li>
+    
+    Title: {{ campaign.title }} <br>
+    City: {{ campaign.city }}<br>
+    Budget: {{ campaign.budget }}<br>
+    Locality: {{ campaign.locality_preference }}<br>
+    Hobbies: {{ campaign.hobbies }}<br>
+    Priorities: {{ campaign.priorities}}<br>
+    Message: {{ campaign.message}}<br><br><hr><br>
+
+    </li>
+  {{/each}}
