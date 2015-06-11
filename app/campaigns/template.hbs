@@ -1,18 +1,16 @@
-{{outlet}}
+
 <br>
 <h2>Showing all campaigns</h2>
 
 
 {{#each campaign in model}}
     <li>
+    Campaign No. : {{ campaign.id }}<br>
+    Title: {{ campaign.title }}<br>
+     {{#link-to 'campaign' campaign.id}}<button class="btn btn-default">open</button>{{/link-to}}
+    <hr>
     
-    Title: {{ campaign.title }} <br>
-    City: {{ campaign.city }}<br>
-    Budget: {{ campaign.budget }}<br>
-    Locality: {{ campaign.locality_preference }}<br>
-    Hobbies: {{ campaign.hobbies }}<br>
-    Priorities: {{ campaign.priorities}}<br>
-    Message: {{ campaign.message}}<br><br><hr><br>
-
     </li>
   {{/each}}
+
+  {{outlet}}

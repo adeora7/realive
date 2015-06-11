@@ -6,7 +6,9 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('campaigns');
+  this.resource('campaigns', function () {
+    	this.resource('campaign', {path : ':campaignid'});
+    });
 });
 
 export default Router;

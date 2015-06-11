@@ -24,7 +24,7 @@ Campaigns.reopenClass({
 	hobbies: 'something',
 	priorities: 'something',
 	message: 'something'},
-	{id:2, user: 'adeora7', title: 'seconf post', city: 'jalandhar',
+	{id:2, user: 'adeora7', title: 'second post', city: 'jalandhar',
 	budget: '10000', locality_preference: 'MD',
 	hobbies: 'something more',
 	priorities: 'something more',
