@@ -9,6 +9,7 @@ Router.map(function() {
   this.resource('campaigns', function () {
     	this.resource('campaign', {path : ':campaignid'});
     });
+  this.route('user');
 });
 
 export default Router;

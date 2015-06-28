@@ -4,26 +4,11 @@
       <ul class="nav navbar-nav">
       <li>{{#link-to 'index' }}Realive{{/link-to}}</li>
     
-    
+    <li>{{#link-to 'user'}}Users{{/link-to}}</li>
         <li>{{#link-to 'campaigns'}}Campaigns{{/link-to}}</li>
        </ul>
     </div>
   </div>
-</nav>
-<br><br><br><h2 id="title">Users</h2>
-
-{{#each user in model}}
-    <li>
-    <b>{{ user.name }}</b><br>
-    campaigns:<br>
-    
-            {{#each campaign in user.campaign}}
-          {{campaign.id}} : {{#link-to 'campaign' campaign.id}}{{campaign.title}}{{/link-to}}<br>
-            {{/each}}
-     
-    <hr>
-    
-    </li>
-  {{/each}}
-
+</nav><br><br><br>
+REALIVE
 {{outlet}}

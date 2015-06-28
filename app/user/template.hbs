@@ -1,0 +1,15 @@
+{{#each user in model}}
+    <li>
+    <b>{{ user.name }}</b><br>
+    campaigns:<br>
+    
+            {{#each campaign in user.campaign}}
+          {{campaign.id}} : {{#link-to 'campaign' campaign.id}}{{campaign.title}}{{/link-to}}<br>
+            {{/each}}
+     
+    <hr>
+    
+    </li>
+  {{/each}}
+
+{{outlet}}

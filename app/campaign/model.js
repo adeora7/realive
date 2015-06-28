@@ -3,7 +3,7 @@ import DS from 'ember-data';
 var attr= DS.attr;
 
 var Campaigns= DS.Model.extend({
-	response: DS.hasMany('response', {async:true }),
+	response: DS.hasMany('response', { async:true }),
 	user: DS.belongsTo('user'),
 	title: attr('string'),
 	end_date: attr('date'),
