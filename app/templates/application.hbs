@@ -10,6 +10,20 @@
     </div>
   </div>
 </nav>
-<br><br><br><h2 id="title">Welcome to Ember.js</h2>
-hey there......if this thing goes out then u need to worry
+<br><br><br><h2 id="title">Users</h2>
+
+{{#each user in model}}
+    <li>
+    <b>{{ user.name }}</b><br>
+    campaigns:<br>
+    
+            {{#each campaign in user.campaign}}
+          {{campaign.id}} : {{#link-to 'campaign' campaign.id}}{{campaign.title}}{{/link-to}}<br>
+            {{/each}}
+     
+    <hr>
+    
+    </li>
+  {{/each}}
+
 {{outlet}}
