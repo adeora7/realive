@@ -19,16 +19,16 @@ var Campaigns= DS.Model.extend({
 
 Campaigns.reopenClass({
 	FIXTURES: [
-	{id:1, user: '1', title: 'new post', city: 'allahabad',
+	{id:1, user: '1', title: 'Need a fun & silent place', city: 'allahabad',
 	budget: '5000', locality_preference: 'IIITA',
-	hobbies: 'something',
-	priorities: 'something',
-	message: 'something'},
+	hobbies: 'football',
+	priorities: 'bar',
+	message: 'new friendly atmosphere', move_in_date: '18-6-2015'},
 	{id:2, user: '1', title: 'second post', city: 'jalandhar',
 	budget: '10000', locality_preference: 'MD',
-	hobbies: 'something more',
-	priorities: 'something more',
-	message: 'something more'}
+	hobbies: 'm a foodie',
+	priorities: 'silent',
+	message: 'hey there ... please find me a place', move_in_date: '18-6-2015'}
 	]
 });
 
